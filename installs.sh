@@ -7,4 +7,5 @@
 # brightnessctl -- brightness setting utility
 # inxi -- system information utility
 # feh -- image viewer & wallpaper setting utility
+# redshift -- color temperature utility
 # maim -- screenshot utility
