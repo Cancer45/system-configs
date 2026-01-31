@@ -12,3 +12,4 @@
 # xss-lock -- engages screenlocker on suspend; prevents 'peek' vulnerabilities
 # xsecurelock -- screen locking utility
 # zathura -- doc reader (PDFs)
+# nerdfonts -- glyph-patched fonts package
