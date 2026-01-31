@@ -1,11 +1,14 @@
-# xsecurelock neovim zathura pcmanfm brightnessctl inxi feh maim
+# brightnessctl feh inxi maim neovim pcmanfm picom redshift xbindkeys xss-lock xsecurelock zathura
 
-# xsecurelock -- screen locking utility
-# neovim -- text editor
-# zathura -- doc reader (PDFs)
-# pcmanfm -- GUI file manager
 # brightnessctl -- brightness setting utility
-# inxi -- system information utility
 # feh -- image viewer & wallpaper setting utility
-# redshift -- color temperature utility
+# inxi -- system information utility
 # maim -- screenshot utility
+# neovim -- text editor
+# pcmanfm -- GUI file manager
+# picom -- compositor
+# redshift -- color temperature utility
+# xbindkeys -- system keybinding utility
+# xss-lock -- engages screenlocker on suspend; prevents 'peek' vulnerabilities
+# xsecurelock -- screen locking utility
+# zathura -- doc reader (PDFs)
