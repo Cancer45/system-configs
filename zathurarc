@@ -1,0 +1,7 @@
+# /etc
+
+# set font
+set font "Hack-Regular 16"
+
+# don't show recents on :o
+set show-recent 0

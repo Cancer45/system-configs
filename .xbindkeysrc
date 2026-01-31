@@ -1,0 +1,38 @@
+# increase volume
+"pactl set-sink-volume @DEFAULT_SINK@ +5%"
+   XF86AudioRaiseVolume
+
+# decrease volume
+"pactl set-sink-volume @DEFAULT_SINK@ -5%"
+   XF86AudioLowerVolume
+
+# mute volume
+"pactl set-sink-mute @DEFAULT_SINK@ toggle"
+   XF86AudioMute
+
+# mute microphone
+"pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+   XF86AudioMicMute
+
+# increase brightness
+"brightnessctl set +5%"
+   XF86MonBrightnessUp
+
+# decrease brightness
+"brightnessctl set 5%-"
+   XF86MonBrightnessDown
+
+# suspend
+"loginctl lock-session && sleep 0.5 && systemctl suspend"
+    Mod4 + Shift + l
+
+"maim -s ~/Media/Screenshots/$(date +%Y-%m-%d_%T).png"
+    Mod4 + Shift + s 
+
+# classroom
+"firefox https://classroom.google.com/u/1/"
+   Mod4 + c
+
+# launch whatsapp web
+"firefox https://web.whatsapp.com"
+   Mod4 + w
