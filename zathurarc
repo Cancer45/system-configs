@@ -5,3 +5,9 @@ set font "Hack-Regular 16"
 
 # don't show recents on :o
 set show-recent 0
+
+# set clipboard to system clipboard
+set selection-clipboard clipboard
+
+# disable pop-up on selection
+set selection-notification false
