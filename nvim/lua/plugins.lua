@@ -207,7 +207,14 @@ require("lazy").setup({
                     prefix = "󰝤",
                     spacing = 2,
                 },
-                signs = true,
+                signs = {
+                    text = {
+                        [vim.diagnostic.severity.ERROR] = "",
+                        [vim.diagnostic.severity.WARN]  = "",
+                        [vim.diagnostic.severity.INFO]  = "",
+                        [vim.diagnostic.severity.HINT]  = "",
+                    },
+                },
                 underline = true,
             })
         end,
@@ -245,5 +252,9 @@ require("lazy").setup({
             fuzzy = { implementation = "prefer_rust_with_warning" }
         },
         opts_extend = { "sources.default" }
+    },
+    {
+        "sphamba/smear-cursor.nvim",
+        opts = {},
     }
 })
