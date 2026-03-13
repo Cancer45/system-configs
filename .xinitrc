@@ -28,3 +28,10 @@ slstatus &
 
 # start WM
 exec dwm
+
+# shell aliases
+# alias cmatrix="cmatrix -C yellow -u 9"
+# alias rm="rm -i"
+# alias open="xdg-open"
+# alias li="tree -L 2"
+# alias sc="sc-im"
