@@ -65,10 +65,12 @@ static const char unknown_str[] = ":(";
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  */
 static const struct arg args[] = {
-	/* function format          argument */
-	{ run_command, "  󰥔 %s",            "date +'%r'" },
-	{ run_command, "  |   %s",            "date +'%a-%b-%d'" },
-	{ wifi_perc, "  |  󰖩 %s%%",    "wlan0" },
-	{ battery_perc, "  |  󰁹 %s%%", "BAT0" },
-	{ battery_state, " %s",      "BAT0" },
+        /* function format          argument */
+        { run_command, "  󰥔 %s",            "date +'%r'" },
+        { run_command, "  |   %s",            "date +'%a-%b-%d'" },
+        { run_command, "  |  󰕾 %s",            "amixer get Master | awk -F\"[][]\" '/Left:/ { print $2 }'" },
+        { run_command, "  |  󰃠 %s",            "brightnessctl -m | cut -d, -f4" },
+        { wifi_perc, "  |  󰖩 %s%%",    "wlan0" },
+        { battery_perc, "  |  󰁹 %s%%", "BAT0" },
+        { battery_state, " %s",      "BAT0" },
 };
