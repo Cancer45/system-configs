@@ -1,4 +1,4 @@
-# brightnessctl feh inxi maim neovim nerdfonts pcmanfm picom redshift sc-im xbindkeys xclip xss-lock xsecurelock zathura
+# brightnessctl feh inxi maim neovim nerdfonts pcmanfm picom redshift sc-im vlc xbindkeys xclip xss-lock xsecurelock zathura
 
 # brightnessctl -- brightness setting utility
 # feh -- image viewer & wallpaper setting utility
@@ -9,9 +9,10 @@
 # pcmanfm -- GUI file manager
 # picom -- compositor
 # redshift -- color temperature utility
+# sc-im -- ncurses spreadsheet viewer/editor -> xlsx_support[libxml2, libzip, xlsxwriter(lib)]
+# vlc -- media player
 # xbindkeys -- system keybinding utility
 # xclip -- system clipboard utility
 # xss-lock -- engages screenlocker on suspend; prevents 'peek' vulnerabilities
 # xsecurelock -- screen locking utility
 # zathura -- doc reader (PDFs)
-# sc-im -- ncurses spreadsheet viewer/editor -> xlsx_support[libxml2, libzip, xlsxwriter(lib)]
