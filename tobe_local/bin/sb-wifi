@@ -1,0 +1,8 @@
+#!/bin/bash
+
+to_parse=$(iw dev wlan0 link | awk 'NR==2 {print $2, $3} NR==6 {print $2}')
+
+name=$(echo $to_parse | awk '{print $1, $2}')
+dBm=$(echo $to_parse | awk '{print $3}')
+signal=$(( ($dBm + 110) * 100 / 70 ))
+echo "$name $signal%"

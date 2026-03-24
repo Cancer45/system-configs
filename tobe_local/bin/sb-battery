@@ -1,0 +1,16 @@
+#!/bin/bash
+
+percentage=$(cat /sys/class/power_supply/BAT0/capacity)
+status_str=$(cat /sys/class/power_supply/BAT0/status)
+
+if [ "$status_str" = "Charging" ]; then
+    status="+"
+
+elif [ "$status_str" = "Discharging" ]; then
+    status="-"
+
+else
+    status="o"
+fi
+
+echo "$percentage% $status"
