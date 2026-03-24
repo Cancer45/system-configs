@@ -2,6 +2,7 @@
 xrdb -merge ~/.Xresources
 
 # set ENV vars here
+export PATH="$PATH:$HOME/.local/bin"
 export _JAVA_AWT_WM_NONREPARENTING=1
 export XSECURELOCK_AUTH_BACKGROUND_COLOR="#821159"
 export XSECURELOCK_AUTH_CURSOR_BLINK=0
