@@ -1,7 +1,7 @@
 #!/bin/bash
 
 mute=$(pactl get-sink-mute @DEFAULT_SINK@ | awk '{print $2}')
-if [ "$mute" = "no" ]; then
+if [ "$mute" = "yes" ]; then
     echo ''
 else
     amixer get Master | awk -F"[][]" '/Left:/ { print $2 }'
