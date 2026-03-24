@@ -1,13 +1,13 @@
 # increase volume
-"pactl set-sink-volume @DEFAULT_SINK@ +5%"
+"pactl set-sink-volume @DEFAULT_SINK@ +5% && kill -44 $(pidof dwmblocks)"
    XF86AudioRaiseVolume
 
 # decrease volume
-"pactl set-sink-volume @DEFAULT_SINK@ -5%"
+"pactl set-sink-volume @DEFAULT_SINK@ -5% && kill -44 $(pidof dwmblocks)"
    XF86AudioLowerVolume
 
 # mute volume
-"pactl set-sink-mute @DEFAULT_SINK@ toggle"
+"pactl set-sink-mute @DEFAULT_SINK@ toggle && kill -44 $(pidof dwmblocks)"
    XF86AudioMute
 
 # mute microphone
@@ -15,23 +15,28 @@
    XF86AudioMicMute
 
 # increase brightness
-"brightnessctl set +5%"
+"brightnessctl set +5% && kill -45 $(pidof dwmblocks)"
    XF86MonBrightnessUp
 
 # decrease brightness
-"brightnessctl set 5%-"
+"brightnessctl set 5%- && kill -45 $(pidof dwmblocks)"
    XF86MonBrightnessDown
 
 # suspend
 "loginctl lock-session && sleep 0.5 && systemctl suspend"
     Mod4 + Shift + l
 
+# screenshot
 "maim -s ~/Media/Screenshots/$(date +%Y-%m-%d_%T).png"
     Mod4 + Shift + s 
 
 # classroom
 "firefox https://classroom.google.com/u/1/"
    Mod4 + c
+
+# open gmail inbox - nuces
+"https://mail.google.com/mail/u/1/#inbox"
+   Mod4 + m
 
 # launch whatsapp web
 "firefox https://web.whatsapp.com"
