@@ -1,9 +1,9 @@
 # increase volume
-"pactl set-sink-volume @DEFAULT_SINK@ +5% && kill -44 $(pidof dwmblocks)"
+"chg-vol +5 && kill -44 $(pidof dwmblocks)"
    XF86AudioRaiseVolume
 
 # decrease volume
-"pactl set-sink-volume @DEFAULT_SINK@ -5% && kill -44 $(pidof dwmblocks)"
+"chg-vol -5 && kill -44 $(pidof dwmblocks)"
    XF86AudioLowerVolume
 
 # mute volume
@@ -15,11 +15,11 @@
    XF86AudioMicMute
 
 # increase brightness
-"brightnessctl set +5% && kill -45 $(pidof dwmblocks)"
+"chg-brite +5 && kill -45 $(pidof dwmblocks)"
    XF86MonBrightnessUp
 
 # decrease brightness
-"brightnessctl set 5%- && kill -45 $(pidof dwmblocks)"
+"chg-brite -5 && kill -45 $(pidof dwmblocks)"
    XF86MonBrightnessDown
 
 # suspend
