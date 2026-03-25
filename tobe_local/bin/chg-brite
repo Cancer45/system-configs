@@ -1,0 +1,16 @@
+#!/bin/bash
+
+curr_brite=$(brightnessctl -m | cut -d, -f4 | tr -d '%')
+new_brite=$(( curr_brite + $1 ))
+
+if [[ $1 -lt 0 ]]; then
+    if [[ $new_brite -gt 5 ]]; then
+        chg=$(( -1 * $1 ))
+        brightnessctl set $chg-% >> /dev/null
+    else
+        brightnessctl set 5% >> /dev/null
+    fi
+elif [[ $curr_brite -ne 100 ]]; then
+    chg=$1
+    brightnessctl set $chg% >> /dev/null
+fi

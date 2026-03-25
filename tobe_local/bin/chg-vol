@@ -1,0 +1,19 @@
+#!/bin/bash
+
+curr_vol=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print int($2 * 100)}')
+
+if [[ $1 -gt 0 && $curr_vol -lt 100 ]]; then
+    if (( $1 + $curr_vol > 100 )); then
+        pactl set-sink-volume @DEFAULT_SINK@ 100%
+    else
+        pactl set-sink-volume @DEFAULT_SINK@ $1%
+    fi
+fi
+
+if [[ $1 -lt 0 && $curr_vol -gt 0 ]]; then
+    if (( $1 + $curr_vol < 0 )); then
+        pactl set-sink-volume @DEFAULT_SINK@ 0%
+    else
+        pactl set-sink-volume @DEFAULT_SINK@ $1%
+    fi
+fi
