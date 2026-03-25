@@ -1,13 +1,14 @@
 #!/bin/bash
 
-to_parse=$(iw dev wlan0 link | awk 'NR==2 {print $2, $3} NR==6 {print $2}')
+name=$(iw dev wlan0 link | grep SSID | cut -d' ' -f2-)
+dBm=$(iw dev wlan0 link | grep signal | awk '{print $2}')
 
-name=$(echo $to_parse | awk '{print $1, $2}')
-dBm=$(echo $to_parse | awk '{print $3}')
 if [[ -z "${dBm// }" ]]; then
     signal=0
     name=""
 else
     signal=" $(( ($dBm + 110) * 100 / 80 ))"
+    (( $signal < 0 )) && signal=0
+    (( $signal > 100 )) && signal=" 100"
 fi
 echo "$name$signal%"
