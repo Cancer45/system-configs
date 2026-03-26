@@ -27,7 +27,7 @@
     Mod4 + Shift + l
 
 # screenshot
-"maim -s ~/Media/Screenshots/$(date +%Y-%m-%d_%T).png"
+"maim -s -o ~/Media/Screenshots/$(date +%Y-%m-%d_%T).png"
     Mod4 + Shift + s 
 
 # classroom
