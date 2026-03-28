@@ -1,8 +1,9 @@
-# brightnessctl feh inxi maim neovim nerdfonts pcmanfm picom redshift sc-im vlc xbindkeys xclip xss-lock xsecurelock zathura
+# brightnessctl feh inxi librewolf maim neovim nerdfonts pcmanfm picom redshift sc-im vlc xbindkeys xclip xss-lock xsecurelock zathura
 
 # brightnessctl -- brightness setting utility
 # feh -- image viewer & wallpaper setting utility
 # inxi -- system information utility
+# librewolf -- privacy-focused minimal browser
 # maim -- screenshot utility
 # neovim -- text editor
 # nerdfonts -- glyph-patched fonts package
