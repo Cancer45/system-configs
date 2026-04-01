@@ -8,6 +8,7 @@
 # neovim -- text editor
 # nerdfonts -- glyph-patched fonts package
 # pcmanfm -- GUI file manager
+# peaclock -- terminal clock, timer and stopwatch utility
 # picom -- compositor
 # redshift -- color temperature utility
 # sc-im -- ncurses spreadsheet viewer/editor -> xlsx_support[libxml2, libzip, xlsxwriter(lib)]
