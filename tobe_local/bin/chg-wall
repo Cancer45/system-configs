@@ -1,0 +1,11 @@
+#!/bin/bash
+
+wall_doc="$HOME/Media/Wallpapers/"
+
+files=$(ls -1 "$wall_doc")
+lines=$(echo "$files" | wc -l)
+
+selection=$(echo "$files" | menu-temp "$lines")
+if [ -n "$selection" ]; then
+    feh --bg-scale $wall_doc$selection
+fi
