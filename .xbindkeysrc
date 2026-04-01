@@ -22,6 +22,8 @@
 "chg-brite -5 && kill -45 $(pidof dwmblocks)"
    XF86MonBrightnessDown
 
+# -------------------------------------------------------------------- #
+
 # suspend
 "loginctl lock-session && sleep 0.5 && systemctl suspend"
     Mod4 + Shift + l
@@ -30,14 +32,22 @@
 "maim -s -o ~/Media/Screenshots/$(date +%Y-%m-%d_%T).png"
     Mod4 + Shift + s 
 
+# -------------------------------------------------------------------- #
+
 # classroom
-"firefox https://classroom.google.com/u/1/"
+"librewolf https://classroom.google.com/u/0/"
    Mod4 + c
 
-# open gmail inbox - nuces
-"https://mail.google.com/mail/u/1/#inbox"
+# inbox
+"librewolf https://mail.google.com/mail/u/1/#inbox"
    Mod4 + m
 
-# launch whatsapp web
-"firefox https://web.whatsapp.com"
+# whatsapp 
+"librewolf https://web.whatsapp.com"
    Mod4 + w
+
+# -------------------------------------------------------------------- #
+
+# wallpaper menu
+"chg-wall"
+   Alt + w
