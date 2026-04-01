@@ -1,4 +1,4 @@
-# brightnessctl feh inxi librewolf maim neovim nerdfonts pcmanfm picom redshift sc-im vlc xbindkeys xclip xss-lock xsecurelock zathura
+# brightnessctl feh inxi librewolf maim neovim nerdfonts pcmanfm peaclock picom redshift sc-im vlc xbindkeys xclip xss-lock xsecurelock zathura
 
 # brightnessctl -- brightness setting utility
 # feh -- image viewer & wallpaper setting utility
