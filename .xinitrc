@@ -16,7 +16,7 @@ xbindkeys
 # touchpad settings -- /etc/X11/xorg.conf.d/90-touchpad.conf
 
 # set wallpaper
-feh --bg-scale ~/Media/Wallpapers/purple_mahal.jpg
+~/.fehbg
 
 # set nightlight
 redshift -O 3500
