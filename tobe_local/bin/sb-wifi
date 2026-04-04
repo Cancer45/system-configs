@@ -1,7 +1,8 @@
 #!/bin/bash
 
-name=$(iw dev wlan0 link | grep SSID | cut -d' ' -f2-)
+name=$(iw dev wlan0 link | grep SSID | cut -d' ' -f2- | sed 's/\\x20//g')
 dBm=$(iw dev wlan0 link | grep signal | awk '{print $2}')
+name_length=20
 
 if [[ -z "${dBm// }" ]]; then
     signal=0
@@ -11,4 +12,9 @@ else
     (( $signal < 0 )) && signal=0
     (( $signal > 100 )) && signal=" 100"
 fi
+
+if [ ${#name} -gt $name_length ]; then
+    name="${name:0:$name_length}..."
+fi
+
 echo "$name$signal%"
