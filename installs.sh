@@ -1,4 +1,5 @@
-# brightnessctl feh inxi librewolf maim neovim nerdfonts pcmanfm peaclock picom redshift sc-im vlc xbindkeys xclip xss-lock xsecurelock zathura
+# brightnessctl feh inxi librewolf maim neovim nerdfonts pcmanfm           picom redshift            vlc xbindkeys xclip xss-lock xsecurelock zathura
+#                                                                 peaclock                sc-im sxiv
 
 # brightnessctl -- brightness setting utility
 # feh -- image viewer & wallpaper setting utility
@@ -12,6 +13,7 @@
 # picom -- compositor
 # redshift -- color temperature utility
 # sc-im -- ncurses spreadsheet viewer/editor -> xlsx_support[libxml2, libzip, xlsxwriter(lib)]
+# sxiv -- simple X image viewer
 # vlc -- media player
 # xbindkeys -- system keybinding utility
 # xclip -- system clipboard utility
