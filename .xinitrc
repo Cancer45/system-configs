@@ -28,14 +28,8 @@ picom&
 dwmblocks&
 
 # start notification daemon
-# dunst& usage: notify-send "TITLE" "MSG" | dep: libnotify
+# dunst& usage: notify-send "TITLE" "MSG"
+dunst&
 
 # start WM
 exec dwm
-
-# SHELL ALIASES
-# alias cmatrix="cmatrix -C yellow -u 9"
-# alias rm="rm -i"
-# alias open="xdg-open"
-# alias li="tree -L 2"
-# alias sc="sc-im"
