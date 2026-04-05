@@ -1,7 +1,9 @@
-# brightnessctl feh inxi librewolf maim neovim nerdfonts pcmanfm           picom redshift            vlc xbindkeys xclip xss-lock xsecurelock zathura
-#                                                                 peaclock                sc-im sxiv
+# brightnessctl cronie dunst feh inxi librewolf maim neovim nerdfonts pcmanfm           picom redshift            vlc xbindkeys xclip xss-lock xsecurelock zathura
+#                                                                              peaclock                 sc-im sxiv
 
 # brightnessctl -- brightness setting utility
+# cronie -- cron job daemon
+# dunst -- notification daemon
 # feh -- image viewer & wallpaper setting utility
 # inxi -- system information utility
 # librewolf -- privacy-focused minimal browser
