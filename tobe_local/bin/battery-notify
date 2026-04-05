@@ -1,0 +1,22 @@
+#!/bin/bash
+
+export DISPLAY=:0
+export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"
+
+warning_level=45
+unplug_at=95
+percentage=$(cat /sys/class/power_supply/BAT0/capacity)
+status_str=$(cat /sys/class/power_supply/BAT0/status)
+
+if [ "$status_str" = "Discharging" ]; then
+    charging=0
+else
+    charging=1
+fi
+
+if [ $percentage -lt $warning_level ] && [ $status_str = "Discharging" ]; then
+    notify-send "Battery Low" "$percentage% remaining"
+
+elif [ $percentage -ge $unplug_at ] && [ $status_str = "Charging" ]; then    
+    notify-send "Battery Charged" "please unplug your device"
+fi
